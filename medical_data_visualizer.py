@@ -18,7 +18,14 @@ df['gluc'] = (df['gluc'] > 1).astype(int)
 # Draw Categorical Plot
 def draw_cat_plot():
     
-    
+    # Create DataFrame for cat plot using `pd.melt` using just the values from 'cholesterol', 'gluc', 'smoke', 'alco', 'active', and 'overweight'.
+    df_cat = pd.melt(df,
+                   id_vars=['cardio'],
+                   value_vars=[
+                       'cholesterol', 'gluc', 'smoke', 'alco', 'active',
+                       'overweight'
+                   ])
+  
     # Draw the catplot with 'sns.catplot()'
     g = sns.catplot(data=df_cat,
                   x='variable',
