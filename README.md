@@ -92,11 +92,11 @@ heat_map_fig = medical_data_visualizer.draw_heat_map()
 
 **Categorical Plot:**
 
-![Categorical Plot](https://github.com/creinis/medical-dv-fcc-data-analyses-py-cert/blob/11e9b9c7186599d424e9e0069fdcecf00f4fbe0d/catplot.png)
+![Categorical Plot](catplot.png)
 
 **Heat Map:**
 
-![Heat Map](https://github.com/creinis/medical-dv-fcc-data-analyses-py-cert/blob/11e9b9c7186599d424e9e0069fdcecf00f4fbe0d/heatmap.png)
+![Heat Map](heatmap.png)
 
 ### Additional Information
 
