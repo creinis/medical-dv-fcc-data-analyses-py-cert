@@ -4,8 +4,8 @@
 <p align="center">
 <img src="https://img.icons8.com/color/75/000000/python.png" width="75" height="75" alt="Python" style="margin: 10px 15px 0 15px;" />
 <img src="https://pandas.pydata.org/static/img/pandas_white.svg" width="175" height="75" alt="Pandas" style="margin: 10px 15px 0 15px;" />
-<img src="https://seaborn.pydata.org/_static/logo-wide-lightbg.svg" width="75" height="75" alt="Seaborn" style="margin: 10px 15px 0 15px;" />
-<img src="https://matplotlib.org/stable/_static/logo2_compressed.svg" width="75" height="75" alt="Matplotlib" style="margin: 10px 15px 0 15px;" />
+<img src="https://seaborn.pydata.org/_static/logo-wide-lightbg.svg" width="175" height="75" alt="Seaborn" style="margin: 10px 15px 0 15px;" />
+<img src="https://th.bing.com/th/id/OIP.I0t-fLjyUZ3XnJLRW1B-uQHaEY?rs=1&pid=ImgDetMain" width="75" height="75" alt="Matplotlib" style="margin: 10px 15px 0 15px;" />
 </p>
 
 ### Try it!
