@@ -55,26 +55,32 @@ def draw_cat_plot():
 
 # Draw Heat Map
 def draw_heat_map():
-    
-    # Clean the data
-    df_heat = df[(df['ap_lo'] <= df['ap_hi']) & 
-                 (df['height'] >= df['height'].quantile(0.025)) &
-                 (df['height'] <= df['height'].quantile(0.975)) &
-                 (df['weight'] >= df['weight'].quantile(0.025)) &
-                 (df['weight'] <= df['weight'].quantile(0.975))]
-    
-    # Set up the matplotlib figure
-    fig, ax = plt.subplots(figsize=(12, 9))
-    
-    # Draw the heatmap with 'sns.heatmap()'
-    sns.heatmap(corr,
+
+  # Clean the data
+  df_heat = df[(df['ap_lo'] <= df['ap_hi'])
+               & (df['height'] >= df['height'].quantile(0.025)) &
+               (df['height'] <= df['height'].quantile(0.975)) &
+               (df['weight'] >= df['weight'].quantile(0.025)) &
+               (df['weight'] <= df['weight'].quantile(0.975))]
+
+  # Calculate the correlation matrix
+  corr = df_heat.corr()
+
+  # Generate a mask for the upper triangle
+  mask = np.triu(np.ones_like(corr, dtype=bool))
+
+  # Set up the matplotlib figure
+  fig, ax = plt.subplots(figsize=(12, 9))
+
+  # Draw the heatmap with 'sns.heatmap()'
+  sns.heatmap(corr,
               mask=mask,
               annot=True,
               fmt='.1f',
               linewidths=.5,
               square=True,
               ax=ax)
-    
-    # Do not modify the next two lines
-    fig.savefig('heatmap.png')
-    return fig
+
+  # Do not modify the next two lines
+  fig.savefig('heatmap.png')
+  return fig
