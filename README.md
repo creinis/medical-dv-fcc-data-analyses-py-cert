@@ -3,8 +3,8 @@
 ###### Technologies:
 <p align="center">
 <img src="https://img.icons8.com/color/75/000000/python.png" width="75" height="75" alt="Python" style="margin: 10px 15px 0 15px;" />
-<img src="https://pandas.pydata.org/static/img/pandas_white.svg" width="175" height="75" alt="Pandas" style="margin: 10px 15px 0 15px;" />
-<img src="https://seaborn.pydata.org/_static/logo-wide-lightbg.svg" width="175" height="75" alt="Seaborn" style="margin: 10px 15px 0 15px;" />
+<img src="https://pandas.pydata.org/static/img/pandas_white.svg" height="75" alt="Pandas" style="margin: 10px 15px 0 15px;" />
+<img src="https://seaborn.pydata.org/_static/logo-wide-lightbg.svg" height="75" alt="Seaborn" style="margin: 10px 15px 0 15px;" />
 <img src="https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ydrrdbbx40u42fduzpgm.png" height="75" alt="Matplotlib" style="margin: 10px 15px 0 15px;" />
 </p>
 
