@@ -18,9 +18,18 @@ df['gluc'] = (df['gluc'] > 1).astype(int)
 # Draw Categorical Plot
 def draw_cat_plot():
     
-  # Get the figure for the output
-  fig = g.fig
+    
+    # Draw the catplot with 'sns.catplot()'
+    g = sns.catplot(data=df_cat,
+                  x='variable',
+                  y='total',
+                  hue='value',
+                  col='cardio',
+                  kind='bar')
+    
+    # Get the figure for the output
+    fig = g.fig
 
-  # Do not modify the next two lines
-  fig.savefig('catplot.png')
-  return fig
+    # Do not modify the next two lines
+    fig.savefig('catplot.png')
+    return fig
